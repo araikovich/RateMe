@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/all_photo_item"
+    android:title="All">
+</item>
+    <item
+        android:id="@+id/now_voating_photo_item"
+        android:title="Voting now">
+    </item>
+    <item
+        android:id="@+id/by_rating_photo_item"
+        android:title="By rating">
+    </item>
+</menu>

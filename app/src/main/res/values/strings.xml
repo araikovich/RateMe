@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RATE ME</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="NoAccYet">No account yet?</string>
+    <string name="CreateOne">Create account</string>
+    <string name="Name">Name</string>
+    <string name="Registration">CREATE ACCOUNT</string>
+    <string name="Already_a_member">Already a member?</string>
+    <string name="GALLERY">GALLERY</string>
+    <string name="PHOTO">PHOTO</string>
+    <string name="done">Done</string>
+    <string name="add_description_optional">Add description (optional)</string>
+    <string name="log_out">Log Out</string>
+</resources>

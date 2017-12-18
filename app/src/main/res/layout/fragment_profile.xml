@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_prof"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_collapseMode="pin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:id="@+id/ic_settings_profile"
+                        android:src="@drawable/ic_settings_white" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_prof">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_prof"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/profile_gradient">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/test_image_profile"
+                    app:civ_border_color="@color/White"
+                    app:civ_border_width="2dp"
+                    android:id="@+id/circleImageView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="Pionts"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:layout_alignBaseline="@+id/textView"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_toStartOf="@+id/circleImageView"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="100dp"
+                    android:text="45"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:text="Votes"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/textView2"
+                    android:layout_toEndOf="@+id/circleImageView"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="100dp"
+                    android:text="122"
+                    android:textColor="@color/White"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Favorite"
+                    android:textColor="@color/White"
+                    android:textSize="30sp"
+                    android:layout_marginTop="180dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="75% liked it"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:layout_marginTop="220dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_prof"
+                android:id="@+id/profile_recycler">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/relative_layout_prof"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                android:id="@+id/prof_progress"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

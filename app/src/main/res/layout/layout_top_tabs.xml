@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add_photo_white"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/ic_btn_camera"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Araikovich inc."
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"/>
+
+                <ImageButton
+                    android:id="@+id/ic_btn_notification"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_notification_white" />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+
+</merge>
